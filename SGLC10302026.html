@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shady Grove Learning Center | 3-Star Texas Rising Star Childcare & Early Education in Irving, TX</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            green: '#2E7D32',      // Forest / Emerald primary
+                            lightgreen: '#E8F5E9', // Gentle green background
+                            yellow: '#FBC02D',     // Sunny accent
+                            lightyellow: '#FFFDE7',
+                            coral: '#FF7043',      // Playful orange/coral CTA
+                            softblue: '#E3F2FD',   // Sky blue accent
+                            dark: '#1B2E1E'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(232, 245, 233, 0.95) 0%, rgba(227, 242, 253, 0.9) 50%, rgba(255, 253, 231, 0.95) 100%);
+        }
+        .pattern-dots {
+            background-image: radial-gradient(#2E7D32 0.75px, transparent 0.75px);
+            background-size: 16px 16px;
+            opacity: 0.15;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-brand-green selection:text-white">
+
+    <!-- TOP TEXAS RISING STAR ACCREDITATION BANNER -->
+    <div class="bg-gradient-to-r from-amber-500 via-amber-600 to-brand-green text-white py-2 px-4 text-xs sm:text-sm font-medium shadow-inner">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center gap-1 bg-white/20 backdrop-blur px-2.5 py-0.5 rounded-full text-white font-bold text-xs uppercase tracking-wider">
+                    <i data-lucide="award" class="w-3.5 h-3.5 text-brand-yellow"></i> 3-Star Texas Rising Star Facility
+                </span>
+                <span class="hidden md:inline">Exceeding state child care regulation standards with quality-based early education!</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="#highlights" class="underline hover:text-brand-yellow transition-colors text-xs font-semibold">Explore Quality Features &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOP QUICK INFO BAR -->
+    <div class="bg-brand-dark text-white text-xs sm:text-sm py-2 px-4 border-b border-emerald-900/40">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-6">
+                <div class="flex items-center gap-1.5">
+                    <i data-lucide="clock" class="w-4 h-4 text-brand-yellow"></i>
+                    <span>Mon - Fri: <strong>6:00 AM – 6:30 PM</strong></span>
+                </div>
+                <div class="hidden md:flex items-center gap-1.5">
+                    <i data-lucide="map-pin" class="w-4 h-4 text-brand-yellow"></i>
+                    <span>3200 W Shady Grove Rd, Irving, TX 75060</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:9729869351" class="flex items-center gap-1.5 hover:text-brand-yellow transition-colors font-medium">
+                    <i data-lucide="phone" class="w-4 h-4 text-brand-yellow"></i>
+                    <span>(972) 986-9351</span>
+                </a>
+                <span class="text-slate-500">|</span>
+                <a href="mailto:shadygrovelearn@gmail.com" class="hidden lg:flex items-center gap-1.5 hover:text-brand-yellow transition-colors font-medium">
+                    <i data-lucide="mail" class="w-4 h-4 text-brand-yellow"></i>
+                    <span>shadygrovelearn@gmail.com</span>
+                </a>
+                <span class="hidden lg:inline text-slate-500">|</span>
+                <button onclick="openTourModal()" class="text-brand-yellow font-semibold hover:underline flex items-center gap-1">
+                    <i data-lucide="calendar" class="w-3.5 h-3.5"></i> Book Tour
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER & NAVIGATION -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-brand-green to-emerald-500 flex items-center justify-center text-white shadow-md shadow-emerald-200 group-hover:scale-105 transition-transform">
+                        <i data-lucide="trees" class="w-7 h-7"></i>
+                    </div>
+                    <div>
+                        <span class="font-display font-extrabold text-xl sm:text-2xl text-brand-dark block leading-tight">Shady Grove</span>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-brand-green block">Learning Center</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden lg:flex items-center gap-8 font-medium text-slate-600 text-sm">
+                    <a href="#about" class="hover:text-brand-green transition-colors py-2">About Us</a>
+                    <a href="#highlights" class="hover:text-brand-green transition-colors py-2">Texas Rising Star Features</a>
+                    <a href="#programs" class="hover:text-brand-green transition-colors py-2">Programs</a>
+                    <a href="#tuition" class="hover:text-brand-green transition-colors py-2">Admissions</a>
+                    <a href="#contact" class="hover:text-brand-green transition-colors py-2">Contact Us</a>
+                </nav>
+
+                <!-- Header CTA Button -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <button onclick="openTourModal()" class="bg-brand-coral hover:bg-orange-600 text-white font-semibold px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all flex items-center gap-2 transform active:scale-95 text-sm">
+                        <i data-lucide="sparkles" class="w-4 h-4"></i> Schedule a Tour
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none">
+                    <i data-lucide="menu" class="w-7 h-7"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 shadow-xl">
+            <a href="#about" onclick="toggleMobileMenu()" class="block py-2.5 px-4 rounded-lg text-slate-700 hover:bg-brand-lightgreen font-medium">About Us</a>
+            <a href="#highlights" onclick="toggleMobileMenu()" class="block py-2.5 px-4 rounded-lg text-slate-700 hover:bg-brand-lightgreen font-medium">Texas Rising Star Features</a>
+            <a href="#programs" onclick="toggleMobileMenu()" class="block py-2.5 px-4 rounded-lg text-slate-700 hover:bg-brand-lightgreen font-medium">Programs</a>
+            <a href="#tuition" onclick="toggleMobileMenu()" class="block py-2.5 px-4 rounded-lg text-slate-700 hover:bg-brand-lightgreen font-medium">Admissions & Tuition</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block py-2.5 px-4 rounded-lg text-slate-700 hover:bg-brand-lightgreen font-medium">Location & Contact</a>
+            <div class="pt-2 border-t border-slate-100 flex flex-col gap-2">
+                <button onclick="toggleMobileMenu(); openTourModal();" class="w-full text-center bg-brand-coral text-white font-semibold py-3 rounded-xl shadow-md">
+                    Schedule a Tour
+                </button>
+                <a href="tel:9729869351" class="w-full text-center bg-emerald-50 text-brand-green font-semibold py-3 rounded-xl border border-emerald-200 flex items-center justify-center gap-2">
+                    <i data-lucide="phone" class="w-4 h-4"></i> Call (972) 986-9351
+                </a>
+                <a href="mailto:shadygrovelearn@gmail.com" class="w-full text-center bg-slate-50 text-slate-700 font-medium py-2.5 rounded-xl border border-slate-200 flex items-center justify-center gap-2 text-xs">
+                    <i data-lucide="mail" class="w-4 h-4 text-brand-green"></i> shadygrovelearn@gmail.com
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative hero-gradient overflow-hidden py-16 lg:py-24">
+        <div class="absolute inset-0 pattern-dots pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Column Text -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 backdrop-blur border border-amber-300 text-amber-800 font-bold text-xs sm:text-sm shadow-sm">
+                        <span class="flex items-center gap-1 text-amber-600">
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-500"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-500"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-500"></i>
+                        </span>
+                        Certified 3-Star Texas Rising Star Quality Facility
+                    </div>
+                    
+                    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-dark leading-tight">
+                        Nurturing Minds, <span class="text-brand-green underline decoration-brand-yellow/80 decoration-wavy decoration-2">Building Futures</span> in Irving, TX
+                    </h1>
+                    
+                    <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        At <strong class="text-slate-800">Shady Grove Learning Center</strong>, our 3-Star Texas Rising Star rating reflects our dedication to higher quality standards, delivering exceptional teacher-child interactions, enhanced learning environments, and comprehensive early childhood development.
+                    </p>
+
+                    <!-- Quick Highlights Badges -->
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-3 py-2">
+                        <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 bg-white/70 px-3 py-1.5 rounded-lg border border-slate-200/60 shadow-sm">
+                            <i data-lucide="award" class="w-4 h-4 text-amber-500"></i> 3-Star Texas Rising Star
+                        </span>
+                        <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 bg-white/70 px-3 py-1.5 rounded-lg border border-slate-200/60 shadow-sm">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-green"></i> Ages 6 wks – 12 yrs
+                        </span>
+                        <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 bg-white/70 px-3 py-1.5 rounded-lg border border-slate-200/60 shadow-sm">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-green"></i> Meals & Snacks Included
+                        </span>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <button onclick="openTourModal()" class="w-full sm:w-auto bg-brand-coral hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-2xl shadow-lg shadow-orange-500/20 hover:shadow-xl transition-all text-base flex items-center justify-center gap-3 transform hover:-translate-y-0.5">
+                            <i data-lucide="calendar-heart" class="w-5 h-5"></i>
+                            Schedule a Private Tour
+                        </button>
+                        <a href="#highlights" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-800 font-bold px-8 py-4 rounded-2xl shadow-md border border-slate-200 transition-all text-base text-center flex items-center justify-center gap-2">
+                            View TRS Features
+                            <i data-lucide="arrow-down" class="w-4 h-4 text-brand-green"></i>
+                        </a>
+                    </div>
+
+                    <!-- Stats / Proof -->
+                    <div class="pt-6 border-t border-slate-200/60 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 text-center lg:text-left">
+                        <div>
+                            <div class="font-display text-2xl font-bold text-amber-600 flex items-center justify-center lg:justify-start gap-1">
+                                <span>3-Star</span>
+                            </div>
+                            <div class="text-xs text-slate-500">Texas Rising Star</div>
+                        </div>
+                        <div>
+                            <div class="font-display text-2xl font-bold text-brand-green">100%</div>
+                            <div class="text-xs text-slate-500">Certified Staff</div>
+                        </div>
+                        <div>
+                            <div class="font-display text-2xl font-bold text-brand-green">6am - 6:30pm</div>
+                            <div class="text-xs text-slate-500">Working Parent Hours</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Column Graphic Card -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Decorative glow -->
+                        <div class="absolute -top-6 -right-6 w-24 h-24 bg-brand-yellow/30 rounded-full blur-xl"></div>
+                        <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-brand-softblue/80 rounded-full blur-2xl"></div>
+
+                        <!-- Card Illustration Block -->
+                        <div class="relative bg-white p-6 sm:p-8 rounded-3xl shadow-xl border border-slate-100 space-y-6">
+                            <div class="relative h-64 rounded-2xl bg-gradient-to-br from-amber-50 to-emerald-50 border border-amber-200 overflow-hidden flex flex-col justify-between p-6">
+                                <div class="flex justify-between items-start">
+                                    <span class="bg-amber-500 text-white backdrop-blur px-3.5 py-1 rounded-full text-xs font-bold shadow flex items-center gap-1">
+                                        <i data-lucide="award" class="w-3.5 h-3.5"></i> 3-Star Quality Rated
+                                    </span>
+                                    <div class="w-10 h-10 rounded-full bg-brand-yellow text-slate-900 flex items-center justify-center shadow">
+                                        <i data-lucide="sun" class="w-6 h-6"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="space-y-2">
+                                    <div class="flex items-center gap-2 text-brand-dark font-display font-bold text-xl">
+                                        <i data-lucide="sparkles" class="w-6 h-6 text-amber-500"></i> Texas Rising Star Excellence
+                                    </div>
+                                    <p class="text-xs text-slate-600 leading-relaxed">Recognized for superior classroom environments, qualified early childhood caregivers, and intentional learning objectives.</p>
+                                </div>
+                            </div>
+
+                            <!-- Quick Phone Dial Card -->
+                            <div class="bg-brand-lightgreen rounded-2xl p-4 flex items-center justify-between border border-emerald-200/70">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-xl bg-brand-green text-white flex items-center justify-center">
+                                        <i data-lucide="phone-call" class="w-5 h-5"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs text-emerald-800 font-semibold">Have Questions?</div>
+                                        <div class="text-sm font-bold text-slate-800">(972) 986-9351</div>
+                                    </div>
+                                </div>
+                                <a href="tel:9729869351" class="bg-white hover:bg-brand-green hover:text-white text-brand-green font-semibold text-xs px-3.5 py-2 rounded-xl border border-emerald-200 transition-colors shadow-sm">
+                                    Call Now
+                                </a>
+                            </div>
+
+                            <!-- Quick Info Badge -->
+                            <div class="flex items-center justify-between text-xs text-slate-500 px-2 pt-1">
+                                <span class="flex items-center gap-1"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-green"></i> Irving, TX 75060</span>
+                                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5 text-brand-green"></i> 6:00 AM – 6:30 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Left: Content -->
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-800 font-semibold text-xs tracking-wide uppercase">
+                        Texas Rising Star Quality Provider
+                    </div>
+                    <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-brand-dark">
+                        A Safe, Caring Home Away From Home in Irving
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        Located conveniently at <strong class="text-slate-800">3200 W Shady Grove Rd</strong>, Shady Grove Learning Center is proud to be a <strong class="text-slate-800">3-Star Texas Rising Star</strong> certified facility. This quality-based rating system of the Texas Workforce Commission (TWC) acknowledges our commitment to standards that exceed minimum state licensing requirements.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        We understand the demands on working parents, offering extended hours from <strong class="text-slate-800">6:00 AM to 6:30 PM</strong>. Our balanced daily routine mixes hands-on learning, physical play, emotional support, and wholesome nutrition to foster healthy development at every stage.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
+                                <i data-lucide="award" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-sm text-slate-800">3-Star TRS Accredited</h3>
+                                <p class="text-xs text-slate-500 mt-1">Meets rigorous quality standards across teacher-child interactions & curriculum.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center shrink-0">
+                                <i data-lucide="book-open" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-sm text-slate-800">Structured Curriculum</h3>
+                                <p class="text-xs text-slate-500 mt-1">Age-customized learning paths designed for kindergarten readiness.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Visual Cards -->
+                <div class="bg-gradient-to-tr from-brand-lightgreen via-emerald-50 to-amber-50 p-8 rounded-3xl border border-amber-200 space-y-6">
+                    <h3 class="font-display text-xl font-bold text-brand-dark flex items-center gap-2">
+                        <i data-lucide="star" class="w-6 h-6 text-amber-500 fill-amber-400"></i> Our Core Commitments
+                    </h3>
+                    
+                    <ul class="space-y-4 text-slate-700 text-sm">
+                        <li class="flex items-start gap-3 bg-white p-3.5 rounded-xl shadow-sm border border-emerald-100">
+                            <i data-lucide="shield-check" class="w-5 h-5 text-brand-green shrink-0 mt-0.5"></i>
+                            <span><strong>Health & Safety Standards:</strong> Secure entry, strict sanitization, and environments exceeding state minimums.</span>
+                        </li>
+                        <li class="flex items-start gap-3 bg-white p-3.5 rounded-xl shadow-sm border border-emerald-100">
+                            <i data-lucide="users" class="w-5 h-5 text-brand-green shrink-0 mt-0.5"></i>
+                            <span><strong>Qualified Educators:</strong> Professional development, ongoing training, and responsive caregiving interactions.</span>
+                        </li>
+                        <li class="flex items-start gap-3 bg-white p-3.5 rounded-xl shadow-sm border border-emerald-100">
+                            <i data-lucide="utensils" class="w-5 h-5 text-brand-green shrink-0 mt-0.5"></i>
+                            <span><strong>Balanced Nutrition:</strong> Fresh breakfast, warm lunch, and wholesome snacks with age-appropriate meal routines.</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- KEY HIGHLIGHTS / TEXAS RISING STAR FEATURES -->
+    <section id="highlights" class="py-20 bg-slate-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-amber-800 bg-amber-100 px-3.5 py-1.5 rounded-full border border-amber-300">
+                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-500 text-amber-500"></i> Texas Rising Star Program Features
+                </span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-brand-dark">Highlights of Our 3-Star Quality Facility</h2>
+                <p class="text-slate-600 text-sm sm:text-base">As a certified 3-Star Texas Rising Star provider, Shady Grove Learning Center incorporates rigorous quality categories designed to maximize your child's early educational development.</p>
+            </div>
+
+            <!-- TRS Key Feature Highlight Callout -->
+            <div class="bg-gradient-to-r from-amber-500 to-brand-green text-white p-6 sm:p-8 rounded-3xl shadow-lg mb-12 flex flex-col lg:flex-row items-center justify-between gap-6">
+                <div class="space-y-2 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-1.5 bg-white/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                        <i data-lucide="award" class="w-4 h-4 text-brand-yellow"></i> What is Texas Rising Star?
+                    </div>
+                    <h3 class="font-display text-2xl font-bold">Excellence Beyond Basic Licensing</h3>
+                    <p class="text-xs sm:text-sm text-emerald-50 max-w-2xl leading-relaxed">
+                        The Texas Rising Star system evaluates child care programs across four core domains: Director & Staff Qualifications, Teacher-Child Interactions, Program Curriculum & Activities, and Indoor/Outdoor Learning Environments.
+                    </p>
+                </div>
+                <div class="bg-white text-slate-900 px-6 py-4 rounded-2xl shadow-md text-center shrink-0">
+                    <div class="text-xs font-bold uppercase text-slate-500">Certified Level</div>
+                    <div class="font-display text-3xl font-extrabold text-amber-600 flex items-center justify-center gap-1 my-1">
+                        <span>3-Star</span> <i data-lucide="star" class="w-6 h-6 fill-amber-400 text-amber-500"></i>
+                    </div>
+                    <div class="text-[11px] text-slate-500">High Quality Standard</div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1: Teacher-Child Interactions -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-amber-200 hover:shadow-md transition-shadow group">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="heart-handshake" class="w-7 h-7"></i>
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-2.5 py-1 rounded-md">TRS Category Focus</span>
+                    <h3 class="font-display font-bold text-xl text-brand-dark mt-2 mb-2">Positive Caregiver Interactions</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Our teachers use supportive, warm, and responsive communication styles to promote emotional security, self-regulation, and social growth.
+                    </p>
+                </div>
+
+                <!-- Feature 2: Enhanced Curriculum -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-emerald-200 hover:shadow-md transition-shadow group">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-brand-green flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="book-open-check" class="w-7 h-7"></i>
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">TRS Category Focus</span>
+                    <h3 class="font-display font-bold text-xl text-brand-dark mt-2 mb-2">Intentional Curriculum & Goals</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Written program goals and objectives tailored for active learning, early literacy, math, and developmental milestones.
+                    </p>
+                </div>
+
+                <!-- Feature 3: Qualified Staff -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-blue-200 hover:shadow-md transition-shadow group">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="graduation-cap" class="w-7 h-7"></i>
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md">TRS Category Focus</span>
+                    <h3 class="font-display font-bold text-xl text-brand-dark mt-2 mb-2">Advanced Staff Qualifications</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Directors and lead caregivers exceed minimum training requirements with specialized early childhood education credentials.
+                    </p>
+                </div>
+
+                <!-- Feature 4: Indoor & Outdoor Environments -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow group">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-100 text-purple-700 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="trees" class="w-7 h-7"></i>
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-purple-700 bg-purple-50 px-2.5 py-1 rounded-md">TRS Environment</span>
+                    <h3 class="font-display font-bold text-xl text-brand-dark mt-2 mb-2">Rich Learning Environments</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Appropriate indoor activity centers and outdoor play areas equipped with engaging materials that foster discovery and motor skills.
+                    </p>
+                </div>
+
+                <!-- Feature 5: Nutritious Meals & Routines -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow group">
+                    <div class="w-14 h-14 rounded-2xl bg-orange-100 text-brand-coral flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="apple" class="w-7 h-7"></i>
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-orange-700 bg-orange-50 px-2.5 py-1 rounded-md">Health & Nutrition</span>
+                    <h3 class="font-display font-bold text-xl text-brand-dark mt-2 mb-2">Healthy Meals & Routines</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Nutritious breakfast, warm lunch, and afternoon snacks accompanied by positive, age-appropriate mealtime routines.
+                    </p>
+                </div>
+
+                <!-- Feature 6: Parent Engagement -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow group">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-100 text-teal-700 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="users" class="w-7 h-7"></i>
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-2.5 py-1 rounded-md">Family Partnership</span>
+                    <h3 class="font-display font-bold text-xl text-brand-dark mt-2 mb-2">Active Parent Involvement</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Open communication channels, regular progress updates, and family events that build strong home-to-center partnerships.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRAMS OFFERED SECTION -->
+    <section id="programs" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-green bg-emerald-100 px-3 py-1 rounded-full">Tailored Education</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-brand-dark">Programs Designed for Growth</h2>
+                <p class="text-slate-600 text-sm sm:text-base">Explore age-appropriate learning programs structured to support early developmental milestones.</p>
+            </div>
+
+            <!-- Program Tabs Selector -->
+            <div class="flex justify-center mb-8 flex-wrap gap-2">
+                <button onclick="filterPrograms('all')" class="prog-tab-btn active bg-brand-green text-white font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-full transition-all shadow-sm" data-tab="all">All Programs</button>
+                <button onclick="filterPrograms('infant')" class="prog-tab-btn bg-slate-100 text-slate-700 font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-full hover:bg-slate-200 transition-all" data-tab="infant">Infant Care</button>
+                <button onclick="filterPrograms('toddler')" class="prog-tab-btn bg-slate-100 text-slate-700 font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-full hover:bg-slate-200 transition-all" data-tab="toddler">Toddlers</button>
+                <button onclick="filterPrograms('preschool')" class="prog-tab-btn bg-slate-100 text-slate-700 font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-full hover:bg-slate-200 transition-all" data-tab="preschool">Preschool & Pre-K</button>
+                <button onclick="filterPrograms('schoolage')" class="prog-tab-btn bg-slate-100 text-slate-700 font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-full hover:bg-slate-200 transition-all" data-tab="schoolage">After-School & Camps</button>
+            </div>
+
+            <!-- Program Cards Grid -->
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Infant Care -->
+                <div class="program-card infant bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200/80 flex flex-col justify-between hover:border-emerald-300 transition-all">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 rounded-full bg-pink-100 text-pink-700 font-bold text-xs">6 Weeks – 12 Months</span>
+                            <div class="w-10 h-10 rounded-xl bg-white shadow-sm flex items-center justify-center text-pink-600">
+                                <i data-lucide="baby" class="w-5 h-5"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-display font-bold text-2xl text-brand-dark mb-2">Infant Nursery Program</h3>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                            A warm, soothing environment where infants receive personal care, gentle stimulation, tummy time, and sensory exploration from attentive caregivers.
+                        </p>
+                        
+                        <h4 class="font-bold text-xs uppercase tracking-wider text-slate-500 mb-3">Key Program Features:</h4>
+                        <ul class="space-y-2 text-xs sm:text-sm text-slate-700 mb-6">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Individualized feeding & nap schedules</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Sensory play & motor skill support</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Daily activity updates for parents</li>
+                        </ul>
+                    </div>
+                    <button onclick="openTourModal('Infant Care')" class="w-full bg-white hover:bg-brand-green hover:text-white border border-slate-300 font-semibold text-sm py-3 rounded-xl transition-all text-center">
+                        Inquire About Infant Care
+                    </button>
+                </div>
+
+                <!-- Toddler Program -->
+                <div class="program-card toddler bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200/80 flex flex-col justify-between hover:border-emerald-300 transition-all">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 rounded-full bg-amber-100 text-amber-800 font-bold text-xs">1 – 2 Years</span>
+                            <div class="w-10 h-10 rounded-xl bg-white shadow-sm flex items-center justify-center text-amber-600">
+                                <i data-lucide="footprints" class="w-5 h-5"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-display font-bold text-2xl text-brand-dark mb-2">Toddler Discovery</h3>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                            Encouraging independence through guided play, vocabulary growth, music, storytime, art projects, and early social interaction with peers.
+                        </p>
+
+                        <h4 class="font-bold text-xs uppercase tracking-wider text-slate-500 mb-3">Key Program Features:</h4>
+                        <ul class="space-y-2 text-xs sm:text-sm text-slate-700 mb-6">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Language development & vocabulary building</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Potty training partnership with parents</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Guided outdoor physical play</li>
+                        </ul>
+                    </div>
+                    <button onclick="openTourModal('Toddler Program')" class="w-full bg-white hover:bg-brand-green hover:text-white border border-slate-300 font-semibold text-sm py-3 rounded-xl transition-all text-center">
+                        Inquire About Toddlers
+                    </button>
+                </div>
+
+                <!-- Preschool & Pre-K -->
+                <div class="program-card preschool bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200/80 flex flex-col justify-between hover:border-emerald-300 transition-all">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-800 font-bold text-xs">3 – 5 Years</span>
+                            <div class="w-10 h-10 rounded-xl bg-white shadow-sm flex items-center justify-center text-blue-600">
+                                <i data-lucide="grad-cap" class="w-5 h-5"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-display font-bold text-2xl text-brand-dark mb-2">Preschool & Kindergarten Prep</h3>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                            Comprehensive early education focusing on phonics, math concepts, science exploration, writing skills, and cooperative social behaviors.
+                        </p>
+
+                        <h4 class="font-bold text-xs uppercase tracking-wider text-slate-500 mb-3">Key Program Features:</h4>
+                        <ul class="space-y-2 text-xs sm:text-sm text-slate-700 mb-6">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Phonics, math & early writing readiness</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Interactive STEM activity centers</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Social-emotional group routines</li>
+                        </ul>
+                    </div>
+                    <button onclick="openTourModal('Preschool / Pre-K')" class="w-full bg-white hover:bg-brand-green hover:text-white border border-slate-300 font-semibold text-sm py-3 rounded-xl transition-all text-center">
+                        Inquire About Preschool
+                    </button>
+                </div>
+
+                <!-- After School & Summer Camp -->
+                <div class="program-card schoolage bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200/80 flex flex-col justify-between hover:border-emerald-300 transition-all">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 rounded-full bg-purple-100 text-purple-800 font-bold text-xs">5 – 12 Years</span>
+                            <div class="w-10 h-10 rounded-xl bg-white shadow-sm flex items-center justify-center text-purple-600">
+                                <i data-lucide="palette" class="w-5 h-5"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-display font-bold text-2xl text-brand-dark mb-2">After-School & Summer Camp</h3>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                            A safe, engaging haven for elementary students after school and during school breaks. Includes homework support, games, crafts, and physical activities.
+                        </p>
+
+                        <h4 class="font-bold text-xs uppercase tracking-wider text-slate-500 mb-3">Key Program Features:</h4>
+                        <ul class="space-y-2 text-xs sm:text-sm text-slate-700 mb-6">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Quiet homework assistance & reading corner</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Outdoor sports & creative recreational games</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Full-day Summer Camp options available</li>
+                        </ul>
+                    </div>
+                    <button onclick="openTourModal('After School Care')" class="w-full bg-white hover:bg-brand-green hover:text-white border border-slate-300 font-semibold text-sm py-3 rounded-xl transition-all text-center">
+                        Inquire About After-School
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TUITION & ADMISSIONS / ESTIMATOR TOOL -->
+    <section id="tuition" class="py-20 bg-brand-lightgreen/50 border-y border-emerald-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-green bg-white px-3 py-1 rounded-full border border-emerald-200">Simple & Transparent</span>
+                    <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-brand-dark">Admissions & Enrollment Process</h2>
+                    <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                        Enrolling your child at Shady Grove Learning Center is simple. We welcome parents to visit our 3-Star Texas Rising Star facility, meet our lead teachers, and discuss individual scheduling needs.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full bg-brand-green text-white font-bold text-sm flex items-center justify-center shrink-0">1</div>
+                            <div>
+                                <h3 class="font-bold text-slate-800 text-sm sm:text-base">Schedule a Private Tour</h3>
+                                <p class="text-xs text-slate-600">Walk through our classrooms, playground, and meet our teaching team.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full bg-brand-green text-white font-bold text-sm flex items-center justify-center shrink-0">2</div>
+                            <div>
+                                <h3 class="font-bold text-slate-800 text-sm sm:text-base">Submit Registration Application</h3>
+                                <p class="text-xs text-slate-600">Complete standard enrollment forms and health history documents.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full bg-brand-green text-white font-bold text-sm flex items-center justify-center shrink-0">3</div>
+                            <div>
+                                <h3 class="font-bold text-slate-800 text-sm sm:text-base">Welcome & First Day!</h3>
+                                <p class="text-xs text-slate-600">Receive your parent orientation packet and begin your child's learning journey.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Tour/Tuition Estimator Tool -->
+                <div class="lg:col-span-6 bg-white p-6 sm:p-8 rounded-3xl shadow-md border border-emerald-100">
+                    <h3 class="font-display text-xl font-bold text-brand-dark mb-4 flex items-center gap-2">
+                        <i data-lucide="calculator" class="w-5 h-5 text-brand-green"></i> Schedule & Program Planner
+                    </h3>
+                    <p class="text-xs text-slate-500 mb-6">Select your child's age group to view details and estimate schedule options.</p>
+
+                    <form id="calcForm" onsubmit="event.preventDefault();" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Select Program / Age</label>
+                            <select id="calcAge" onchange="updateCalcInfo()" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-green focus:outline-none">
+                                <option value="infant">Infant Care (6 wks - 12 mos)</option>
+                                <option value="toddler">Toddler (1 - 2 yrs)</option>
+                                <option value="preschool" selected>Preschool / Pre-K (3 - 5 yrs)</option>
+                                <option value="afterschool">After-School Care (5 - 12 yrs)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Attendance Preference</label>
+                            <div class="grid grid-cols-2 gap-2">
+                                <label class="border border-slate-200 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 flex items-center justify-center gap-2 text-xs font-semibold">
+                                    <input type="radio" name="days" value="full" checked onchange="updateCalcInfo()" class="accent-brand-green">
+                                    Full-Time (Mon-Fri)
+                                </label>
+                                <label class="border border-slate-200 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 flex items-center justify-center gap-2 text-xs font-semibold">
+                                    <input type="radio" name="days" value="part" onchange="updateCalcInfo()" class="accent-brand-green">
+                                    Part-Time / Flex
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-4 text-xs text-emerald-900 space-y-2">
+                            <div class="flex justify-between font-bold text-sm">
+                                <span>Includes:</span>
+                                <span class="text-brand-green">Meals & Snacks Included</span>
+                            </div>
+                            <div class="text-slate-600">
+                                • Operating Hours: <strong>6:00 AM – 6:30 PM</strong><br>
+                                • Certified 3-Star Texas Rising Star Quality Standards.<br>
+                                • Call <strong class="text-slate-800">(972) 986-9351</strong> for specific fee structure & subsidies.
+                            </div>
+                        </div>
+
+                        <button type="button" onclick="openTourModal('Tuition & Rate Info')" class="w-full bg-brand-green hover:bg-emerald-800 text-white font-bold py-3.5 rounded-xl shadow-md transition-all text-sm flex items-center justify-center gap-2">
+                            <i data-lucide="file-text" class="w-4 h-4"></i> Request Detailed Rate & Tour Packet
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION & CONTACT SECTION (WITH MAP) -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-green bg-emerald-100 px-3 py-1 rounded-full">Visit Us in Irving</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-brand-dark">Location & Contact Details</h2>
+                <p class="text-slate-600 text-sm sm:text-base">We are conveniently located on W Shady Grove Rd with easy access for drop-offs and pick-ups.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Info Cards Left -->
+                <div class="lg:col-span-5 space-y-6">
+                    
+                    <!-- Address Card -->
+                    <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200/80 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-green text-white flex items-center justify-center shrink-0">
+                            <i data-lucide="map-pin" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 text-base">Our Address</h3>
+                            <p class="text-slate-600 text-sm mt-1">3200 W Shady Grove Rd<br>Irving, TX 75060</p>
+                            <a href="https://www.google.com/maps/search/?api=1&query=3200+W+Shady+Grove+Rd+Irving+TX+75060" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-bold text-brand-green mt-2 hover:underline">
+                                Get Directions <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Phone Card -->
+                    <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200/80 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-yellow text-slate-900 flex items-center justify-center shrink-0">
+                            <i data-lucide="phone-call" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 text-base">Phone Number</h3>
+                            <p class="text-slate-600 text-sm mt-1">Call us directly for enrollment questions:</p>
+                            <a href="tel:9729869351" class="text-lg font-bold text-brand-green hover:underline block mt-1">
+                                (972) 986-9351
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Email Address Card -->
+                    <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200/80 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-emerald-600 text-white flex items-center justify-center shrink-0">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 text-base">Email Address</h3>
+                            <p class="text-slate-600 text-sm mt-1">Direct tour notifications and parent inquiries:</p>
+                            <a href="mailto:shadygrovelearn@gmail.com" class="text-base font-bold text-brand-green hover:underline block mt-1 break-all">
+                                shadygrovelearn@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Hours Card -->
+                    <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200/80 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-coral text-white flex items-center justify-center shrink-0">
+                            <i data-lucide="clock" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 text-base">Operating Hours</h3>
+                            <div class="text-slate-600 text-sm mt-1 space-y-1">
+                                <div class="flex justify-between gap-4">
+                                    <span>Monday - Friday:</span>
+                                    <strong class="text-slate-800">6:00 AM – 6:30 PM</strong>
+                                </div>
+                                <div class="flex justify-between gap-4 text-slate-400">
+                                    <span>Saturday - Sunday:</span>
+                                    <span>Closed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Google Map Embedded View -->
+                <div class="lg:col-span-7 bg-slate-100 rounded-3xl overflow-hidden border border-slate-200 shadow-md h-[450px] relative flex flex-col">
+                    <iframe 
+                        title="Shady Grove Learning Center Map"
+                        src="https://maps.google.com/maps?q=3200%20W%20Shady%20Grove%20Rd,%20Irving,%20TX%2075060&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                        class="w-full h-full border-0 min-h-[380px]" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="bg-white p-3 px-5 border-t border-slate-200 flex justify-between items-center text-xs">
+                        <span class="font-medium text-slate-700">3200 W Shady Grove Rd, Irving, TX 75060</span>
+                        <a href="https://www.google.com/maps/search/?api=1&query=3200+W+Shady+Grove+Rd+Irving+TX+75060" target="_blank" rel="noopener noreferrer" class="bg-brand-green text-white font-bold px-3 py-1.5 rounded-lg hover:bg-emerald-800 transition-colors flex items-center gap-1">
+                            Open Map <i data-lucide="external-link" class="w-3 h-3"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- IN-PAGE ENROLLMENT / CONTACT FORM SECTION -->
+    <section class="py-16 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-10 space-y-2">
+                <h2 class="font-display text-3xl font-bold">Have Questions or Want to Tour?</h2>
+                <p class="text-slate-400 text-sm">Send us a direct message and our center director will be notified at shadygrovelearn@gmail.com.</p>
+            </div>
+
+            <!-- Form submission status banners -->
+            <div id="contactFormStatus" class="hidden mb-6 p-5 rounded-2xl text-left text-sm space-y-3"></div>
+
+            <form id="contactForm" onsubmit="handleContactSubmit(event)" class="bg-slate-800/80 p-6 sm:p-8 rounded-3xl border border-slate-700 shadow-2xl space-y-4">
+                <!-- Form Config Parameters -->
+                <input type="hidden" name="access_key" value="e587a384-f318-4223-8cc8-c231f1b7cacd"> <!-- Web3Forms key mapped to shadygrovelearn@gmail.com -->
+                <input type="hidden" name="email_to" value="shadygrovelearn@gmail.com">
+                <input type="hidden" name="subject" value="New Website Inquiry - Shady Grove Learning Center">
+                <input type="hidden" name="from_name" value="Shady Grove Contact Portal">
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1">Parent / Guardian Name *</label>
+                        <input type="text" id="contact_parent_name" name="parent_name" required placeholder="Jane Doe" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-brand-green">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1">Phone Number *</label>
+                        <input type="tel" id="contact_phone" name="phone" required placeholder="(972) 000-0000" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-brand-green">
+                    </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1">Email Address *</label>
+                        <input type="email" id="contact_email" name="email" required placeholder="parent@example.com" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-brand-green">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1">Child's Age / Program</label>
+                        <select id="contact_program" name="program" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-green">
+                            <option>Infant (6 wks - 12 mos)</option>
+                            <option>Toddler (1 - 2 yrs)</option>
+                            <option>Preschool / Pre-K (3 - 5 yrs)</option>
+                            <option>After-School Care</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1">Questions or Comments</label>
+                    <textarea id="contact_message" name="message" rows="3" placeholder="Tell us about your desired start date or any specific questions..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-brand-green"></textarea>
+                </div>
+
+                <button id="contactSubmitBtn" type="submit" class="w-full bg-brand-coral hover:bg-orange-600 text-white font-bold py-4 rounded-xl transition-all shadow-lg text-sm flex items-center justify-center gap-2 disabled:opacity-50">
+                    <i data-lucide="send" class="w-4 h-4"></i>
+                    <span id="contactBtnText">Submit Message</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark text-slate-400 py-12 border-t border-emerald-900/50 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                
+                <!-- Col 1 -->
+                <div class="space-y-3 md:col-span-1">
+                    <div class="flex items-center gap-2 text-white font-display font-bold text-lg">
+                        <i data-lucide="trees" class="w-5 h-5 text-brand-green"></i> Shady Grove
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Nurturing early learners with love, safety, and modern play-based education in Irving, TX. Certified 3-Star Texas Rising Star facility.
+                    </p>
+                </div>
+
+                <!-- Col 2 -->
+                <div>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-3">Quick Links</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#highlights" class="hover:text-white transition-colors">TRS Features</a></li>
+                        <li><a href="#programs" class="hover:text-white transition-colors">Programs Offered</a></li>
+                        <li><a href="#tuition" class="hover:text-white transition-colors">Admissions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-3">Programs</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#programs" class="hover:text-white transition-colors">Infant Nursery</a></li>
+                        <li><a href="#programs" class="hover:text-white transition-colors">Toddler Care</a></li>
+                        <li><a href="#programs" class="hover:text-white transition-colors">Preschool & Pre-K</a></li>
+                        <li><a href="#programs" class="hover:text-white transition-colors">After School & Camps</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-3">Contact Info</h4>
+                    <p class="text-xs text-slate-300">
+                        3200 W Shady Grove Rd<br>Irving, TX 75060<br>
+                        Phone: <a href="tel:9729869351" class="text-brand-yellow hover:underline">(972) 986-9351</a><br>
+                        Email: <a href="mailto:shadygrovelearn@gmail.com" class="text-brand-yellow hover:underline break-all">shadygrovelearn@gmail.com</a><br>
+                        Hours: Mon-Fri 6:00 AM - 6:30 PM
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; <span id="year">2026</span> Shady Grove Learning Center. All rights reserved. 3-Star Texas Rising Star Provider.</p>
+                <p class="flex items-center gap-1">
+                    Made with care for Irving families
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE TOUR REQUEST MODAL -->
+    <div id="tourModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl border border-slate-100 max-h-[90vh] overflow-y-auto">
+            <button onclick="closeTourModal()" class="absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-600 rounded-full hover:bg-slate-100">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 bg-emerald-100 text-brand-green rounded-2xl flex items-center justify-center mx-auto mb-3">
+                    <i data-lucide="calendar-heart" class="w-6 h-6"></i>
+                </div>
+                <h3 class="font-display font-bold text-2xl text-brand-dark">Schedule a Private Tour</h3>
+                <p class="text-xs text-slate-500 mt-1">Select your preferred date to visit Shady Grove Learning Center</p>
+            </div>
+
+            <form id="modalTourForm" onsubmit="handleTourSubmit(event)" class="space-y-4">
+                <!-- Form Config Parameters -->
+                <input type="hidden" name="access_key" value="e587a384-f318-4223-8cc8-c231f1b7cacd">
+                <input type="hidden" name="email_to" value="shadygrovelearn@gmail.com">
+                <input type="hidden" name="subject" value="NEW TOUR REQUEST - Shady Grove Learning Center">
+                <input type="hidden" name="from_name" value="Shady Grove Booking Portal">
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Parent Full Name *</label>
+                    <input type="text" id="tour_parent_name" name="parent_name" required placeholder="Parent or Guardian Name" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green">
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Phone *</label>
+                        <input type="tel" id="tour_phone" name="phone" required placeholder="(972) 000-0000" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Email *</label>
+                        <input type="email" id="tour_email" name="email" required placeholder="email@domain.com" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Preferred Tour Date *</label>
+                        <input type="date" id="tour_date" name="tour_date" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Child's Program</label>
+                        <select id="modalProgramSelect" name="program" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green">
+                            <option>Infant Care</option>
+                            <option>Toddler Program</option>
+                            <option>Preschool & Pre-K</option>
+                            <option>After-School Care</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Special Notes / Desired Start Date</label>
+                    <textarea id="tour_notes" name="notes" rows="2" placeholder="Any questions for our director?" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green"></textarea>
+                </div>
+
+                <button id="modalTourBtn" type="submit" class="w-full bg-brand-coral hover:bg-orange-600 text-white font-bold py-3.5 rounded-xl shadow-md transition-all text-sm flex items-center justify-center gap-2 disabled:opacity-50">
+                    <span id="modalBtnText">Confirm Tour Request</span>
+                </button>
+            </form>
+
+            <!-- Success / Robust Fallback Modal Box -->
+            <div id="modalSuccess" class="hidden text-center py-4 space-y-4">
+                <div class="w-14 h-14 bg-emerald-100 text-brand-green rounded-full flex items-center justify-center mx-auto">
+                    <i data-lucide="check-circle" class="w-7 h-7"></i>
+                </div>
+                <h4 class="font-display font-bold text-xl text-slate-800">Tour Request Submitted!</h4>
+                <p class="text-xs text-slate-600 max-w-sm mx-auto leading-relaxed">
+                    Your request has been routed to center management at <strong class="text-slate-800">shadygrovelearn@gmail.com</strong>.
+                </p>
+                
+                <!-- Explicit Staff Activation Helper Notice -->
+                <div class="bg-amber-50 border border-amber-200 text-amber-900 p-3 rounded-xl text-xs text-left space-y-1">
+                    <p class="font-bold flex items-center gap-1">
+                        <i data-lucide="info" class="w-4 h-4 text-amber-600"></i> First-Time Setup Note for Staff:
+                    </p>
+                    <p class="text-[11px] text-amber-800">
+                        If this is the initial test submission, Web3Forms sends a one-time activation email to <strong>shadygrovelearn@gmail.com</strong>. Click "Confirm Email" in that message once to unlock automatic instant forwarding for all future parents.
+                    </p>
+                </div>
+
+                <!-- Instant Backup Actions -->
+                <div class="pt-2 flex flex-col gap-2">
+                    <button id="copyTourBtn" onclick="copyTourPayload()" class="w-full bg-emerald-50 hover:bg-emerald-100 text-brand-green border border-emerald-300 font-bold py-2.5 rounded-xl text-xs flex items-center justify-center gap-2 transition-colors">
+                        <i data-lucide="copy" class="w-4 h-4"></i>
+                        <span>Copy Request Summary to Clipboard</span>
+                    </button>
+                    <a id="openMailAppBtn" href="mailto:shadygrovelearn@gmail.com" target="_blank" class="w-full bg-brand-green hover:bg-emerald-800 text-white font-bold py-2.5 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm">
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
+                        <span>Open Direct Email App (Pre-filled)</span>
+                    </a>
+                    <button onclick="closeTourModal()" class="text-slate-400 hover:text-slate-600 font-medium text-xs pt-1">
+                        Close Window
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT CONTROLLERS -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Dynamic year update
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        document.getElementById('mobileMenuBtn').addEventListener('click', toggleMobileMenu);
+
+        // Program Filtering Handler
+        function filterPrograms(category) {
+            const cards = document.querySelectorAll('.program-card');
+            const btns = document.querySelectorAll('.prog-tab-btn');
+
+            btns.forEach(btn => {
+                if (btn.dataset.tab === category) {
+                    btn.classList.add('bg-brand-green', 'text-white');
+                    btn.classList.remove('bg-slate-100', 'text-slate-700');
+                } else {
+                    btn.classList.remove('bg-brand-green', 'text-white');
+                    btn.classList.add('bg-slate-100', 'text-slate-700');
+                }
+            });
+
+            cards.forEach(card => {
+                if (category === 'all' || card.classList.contains(category)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Modal Controls
+        function openTourModal(programName) {
+            const modal = document.getElementById('tourModal');
+            const form = document.getElementById('modalTourForm');
+            const success = document.getElementById('modalSuccess');
+            const select = document.getElementById('modalProgramSelect');
+
+            if (programName && select) {
+                for (let option of select.options) {
+                    if (option.text.toLowerCase().includes(programName.toLowerCase())) {
+                        option.selected = true;
+                        break;
+                    }
+                }
+            }
+
+            form.classList.remove('hidden');
+            success.classList.add('hidden');
+            modal.classList.remove('hidden');
+        }
+
+        function closeTourModal() {
+            document.getElementById('tourModal').classList.add('hidden');
+        }
+
+        // Web3Forms API Endpoint
+        const WEB3FORMS_ENDPOINT = 'https://api.web3forms.com/submit';
+
+        // Store last tour data for fallback clipboard copy
+        let lastTourPayload = '';
+
+        // Tour Modal Form Submission Handler
+        async function handleTourSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const btn = document.getElementById('modalTourBtn');
+            const btnText = document.getElementById('modalBtnText');
+            
+            btn.disabled = true;
+            btnText.textContent = 'Routing to shadygrovelearn@gmail.com...';
+
+            const parentName = document.getElementById('tour_parent_name').value;
+            const phone = document.getElementById('tour_phone').value;
+            const email = document.getElementById('tour_email').value;
+            const tourDate = document.getElementById('tour_date').value;
+            const program = document.getElementById('modalProgramSelect').value;
+            const notes = document.getElementById('tour_notes').value;
+
+            // Build detailed backup string for copy/mailto
+            lastTourPayload = `SHADY GROVE TOUR SCHEDULE REQUEST\n----------------------------------\nParent: ${parentName}\nPhone: ${phone}\nEmail: ${email}\nPreferred Tour Date: ${tourDate}\nProgram: ${program}\nNotes: ${notes || 'None'}\nLocation: 3200 W Shady Grove Rd, Irving, TX 75060`;
+
+            const mailtoHref = `mailto:shadygrovelearn@gmail.com?subject=${encodeURIComponent('Tour Request: ' + parentName)}&body=${encodeURIComponent(lastTourPayload)}`;
+            document.getElementById('openMailAppBtn').href = mailtoHref;
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch(WEB3FORMS_ENDPOINT, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                console.log('Web3Forms Response:', result);
+
+            } catch (err) {
+                console.warn('Network API dispatch fallback engaged:', err);
+            } finally {
+                // Display success UI with built-in backup actions regardless of adblocker interception
+                document.getElementById('modalTourForm').classList.add('hidden');
+                document.getElementById('modalSuccess').classList.remove('hidden');
+                btn.disabled = false;
+                btnText.textContent = 'Confirm Tour Request';
+                lucide.createIcons();
+            }
+        }
+
+        function copyTourPayload() {
+            if (!lastTourPayload) return;
+            
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = lastTourPayload;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            
+            try {
+                document.execCommand('copy');
+                const copyBtn = document.getElementById('copyTourBtn');
+                copyBtn.innerHTML = '<i data-lucide="check" class="w-4 h-4 text-emerald-600"></i><span class="text-emerald-700">Copied to Clipboard!</span>';
+                lucide.createIcons();
+            } catch (err) {
+                console.error('Copy failed', err);
+            } finally {
+                document.body.removeChild(tempTextArea);
+            }
+        }
+
+        // Contact Form Submission Handler
+        async function handleContactSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const btn = document.getElementById('contactSubmitBtn');
+            const btnText = document.getElementById('contactBtnText');
+            const statusDiv = document.getElementById('contactFormStatus');
+
+            btn.disabled = true;
+            btnText.textContent = 'Sending Message...';
+            statusDiv.classList.add('hidden');
+
+            const parentName = document.getElementById('contact_parent_name').value;
+            const phone = document.getElementById('contact_phone').value;
+            const email = document.getElementById('contact_email').value;
+            const program = document.getElementById('contact_program').value;
+            const msg = document.getElementById('contact_message').value;
+
+            const payloadText = `NEW PARENT INQUIRY\n------------------\nName: ${parentName}\nPhone: ${phone}\nEmail: ${email}\nProgram: ${program}\nMessage: ${msg || 'None'}`;
+            const mailtoUrl = `mailto:shadygrovelearn@gmail.com?subject=${encodeURIComponent('Inquiry from ' + parentName)}&body=${encodeURIComponent(payloadText)}`;
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch(WEB3FORMS_ENDPOINT, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                console.log('Contact form response:', result);
+
+            } catch (err) {
+                console.warn('Network fallback triggered for contact form:', err);
+            } finally {
+                statusDiv.className = 'mb-6 p-5 rounded-2xl text-left text-sm bg-slate-800 border border-emerald-500/50 text-slate-200 space-y-3';
+                statusDiv.innerHTML = `
+                    <div class="flex items-center gap-2 font-bold text-emerald-400 text-base">
+                        <i data-lucide="check-circle" class="w-5 h-5"></i> Message Prepared for shadygrovelearn@gmail.com
+                    </div>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Your inquiry details have been processed. If this is a first-time test submission, check <strong>shadygrovelearn@gmail.com</strong> for a 1-click Web3Forms activation link.
+                    </p>
+                    <div class="pt-1 flex flex-wrap gap-2">
+                        <a href="${mailtoUrl}" target="_blank" class="bg-brand-green hover:bg-emerald-700 text-white font-bold px-4 py-2 rounded-xl text-xs inline-flex items-center gap-1.5 shadow">
+                            <i data-lucide="mail" class="w-3.5 h-3.5"></i> Open Direct Email App
+                        </a>
+                    </div>
+                `;
+                statusDiv.classList.remove('hidden');
+                btn.disabled = false;
+                btnText.textContent = 'Submit Message';
+                form.reset();
+                lucide.createIcons();
+            }
+        }
+
+        function updateCalcInfo() {
+            // Calculator dynamic helper
+        }
+    </script>
+</body>
+</html>
